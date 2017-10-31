@@ -1,0 +1,45 @@
+{
+    "name": "realrisman/image-optimizer",
+    "description": "Easily optimize images using PHP",
+    "keywords": [
+        "realrisman",
+        "image-optimizer"
+    ],
+    "homepage": "https://github.com/realrisman/image-optimizer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhamad Risman",
+            "email": "real.risman@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "psr/log": "^1.0",
+        "symfony/process": "^2.8|^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2",
+        "symfony/var-dumper": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RealRisman\\ImageOptimizer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RealRisman\\ImageOptimizer\\Test\\": "tests"
+        },
+        "files": [
+            "tests/helpers.php"
+        ]
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
